@@ -740,7 +740,8 @@
 
 // Homing speeds (mm/m)
 #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (4*60)
+//#define HOMING_FEEDRATE_Z  (4*60)
+#define HOMING_FEEDRATE_Z  (40*60)
 
 //
 // MOVEMENT SETTINGS
@@ -751,7 +752,7 @@
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {78.74,78.74,400,429}  // default steps per unit for Ultimaker
 //#define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 25}    // (mm/sec)
-#define DEFAULT_MAX_FEEDRATE          {3000, 3000, 500, 250}    // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          {3000, 3000, 5000, 250}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
